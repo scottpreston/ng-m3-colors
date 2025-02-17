@@ -1,59 +1,94 @@
-# NgM3Colors
+# Angular Material 3 (M3) Colors Showcase
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+This Angular application demonstrates all Material 3 (M3) system colors using CSS variables such as:
 
-## Development server
+- `--mat-sys-background`
+- `--mat-sys-error`
+- `--mat-sys-error-container`
+- `--mat-sys-inverse-on-surface`
+- `--mat-sys-inverse-primary`
+- `--mat-sys-inverse-surface`
+- *(...and many more!)*
 
-To start a local development server, run:
+The app dynamically applies and displays each color, making it a useful reference for designers and developers working with Angular Material 3.
 
-```bash
-ng serve
+## 🚀 Features
+
+- 🔥 **Full M3 color palette** – Every Material 3 color system variable is included.
+- 🎨 **Live preview** – See how colors look and interact in real-time.
+- 🏗 **Built with Angular** – Easy to extend and integrate into other projects.
+- 📦 **Lightweight** – Minimal dependencies, making it fast and efficient.
+
+## 📸 Screenshots
+
+*(Add a few screenshots of the UI here to showcase the color previews!)*
+
+## 📦 Installation & Setup
+
+1. Clone the repository:
+
+   ```sh
+   git clone git@github.com:scottpreston/ng-m3-colors.git
+   cd ng-m3-colors
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Ensure Angular Material is installed (required for M3 colors):
+
+   ```sh
+   ng add @angular/material
+   ```
+
+4. Run the development server:
+
+   ```sh
+   ng serve
+   ```
+
+5. Open your browser and navigate to:
+
+   ```sh
+   http://localhost:4200
+   ```
+
+## 🎯 Usage
+
+- Browse through the app to view different Material 3 system colors.
+- Click on colors to copy their variable names or HEX values.
+- Modify or extend the theme in `styles.scss`.
+
+## 🛠 Customization
+
+You can tweak the color theme by modifying the `theme.scss` or `styles.scss` file. 
+Example:
+
+```scss
+:root {
+  --mat-sys-primary: #6200EE;
+  --mat-sys-background: #F5F5F5;
+}
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🤝 Contributing
 
-## Code scaffolding
+Contributions are welcome! Feel free to submit issues or pull requests.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Fork the repository.
+2. Create a new branch (`feature/my-new-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/my-new-feature`).
+5. Open a Pull Request.
 
-```bash
-ng generate component component-name
-```
+## 📜 License
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+Happy coding! 🎨🚀
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
