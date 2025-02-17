@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Colors</h2>
+    <pre>
+        ref: "&#64;angular/material/prebuilt-themes/azure-blue.css"
+        eg: background-color: var(--mat-sys-background);
+    </pre>
+    <table class="colors-table">
+        <thead>
+            <tr>
+                <th>Variable Name</th>
+                <th>Color Value</th>
+                <th>Preview</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let color of colors">
+                <td>{{ color.name }}</td>
+                <td>{{ color.value }}</td>
+                <td class="color">
+                    <span class="color-swatch" [style.backgroundColor]="color.value"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

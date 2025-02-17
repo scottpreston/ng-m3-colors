@@ -1,0 +1,36 @@
+.colors-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.colors-table th,
+.colors-table td {
+
+    padding: 5px;
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.colors-table th {
+    background-color: var(--mat-sys-inverse-surface);
+    color: var(--mat-sys-inverse-on-surface);
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 5rem;
+    height: 3rem;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+}
+
+td.color {
+    text-align: center;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
