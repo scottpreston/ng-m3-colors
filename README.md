@@ -16,12 +16,18 @@ The app dynamically applies and displays each color, making it a useful referenc
 
 - 🔥 **Full M3 color palette** – Every Material 3 color system variable is included.
 - 🎨 **Live preview** – See how colors look and interact in real-time.
+- 🌗 **Light/Dark mode toggle** – Easily switch between light and dark themes.
 - 🏗 **Built with Angular** – Easy to extend and integrate into other projects.
 - 📦 **Lightweight** – Minimal dependencies, making it fast and efficient.
 
 ## 📸 Screenshots
 
-*(Add a few screenshots of the UI here to showcase the color previews!)*
+### Light Mode
+![Light Mode Preview](light-mode.png)
+
+### Dark Mode
+![Light Mode Preview](dark-mode.png)
+
 
 ## 📦 Installation & Setup
 
@@ -60,6 +66,7 @@ The app dynamically applies and displays each color, making it a useful referenc
 
 - Browse through the app to view different Material 3 system colors.
 - Click on colors to copy their variable names or HEX values.
+- Toggle between light and dark mode using the UI switch.
 - Modify or extend the theme in `styles.scss`.
 
 ## 🛠 Customization
@@ -71,6 +78,17 @@ Example:
 :root {
   --mat-sys-primary: #6200EE;
   --mat-sys-background: #F5F5F5;
+}
+```
+
+To support dark mode, you can define alternate styles:
+
+```scss
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mat-sys-background: #121212;
+    --mat-sys-primary: #BB86FC;
+  }
 }
 ```
 
@@ -91,4 +109,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Happy coding! 🎨🚀
-
